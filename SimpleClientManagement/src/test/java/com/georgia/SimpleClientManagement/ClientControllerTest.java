@@ -1,6 +1,5 @@
 package com.georgia.SimpleClientManagement;
 
-
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.ArgumentMatchers.eq;
@@ -72,10 +71,10 @@ public class ClientControllerTest {
 
         verify(clientService, times(1)).createClient(any(Client.class));
     }
-    
+
     @Autowired
     private ObjectMapper objectMapper;
-       
+
     @Test
     void testUpdateClient() throws Exception {
         Long clientId = 1L;
