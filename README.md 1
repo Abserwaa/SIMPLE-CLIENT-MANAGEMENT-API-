@@ -1,0 +1,12 @@
+📌 Project Name
+
+🏷️Simple Client Management API
+
+🔖Description
+
+The Client Management API provides a simple interface to create, retrieve, update, and delete client records. Each client includes details such as name, age, address, and any associated medical conditions. This API is ideal for applications needing a centralized way to handle client information.
+
+
+## Swagger API Documentation 
+
+URL: http://localhost:8080/swagger-ui/index.html#
