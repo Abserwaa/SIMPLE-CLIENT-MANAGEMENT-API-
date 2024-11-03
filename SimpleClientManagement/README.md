@@ -22,6 +22,7 @@ The Client Management API provides a simple interface to create, retrieve, updat
   - [🔖API Documentation](#api-documentation)
   - [API Endpoints](#api-endpoints)
   - [Testing](#testing)
+  - [🔗 Swagger API Documentation](#-swagger-api-documentation)
 
 ## 🔖Features
 
@@ -124,6 +125,10 @@ Response: Confirmation message upon successful deletion.
 
 To run tests, use the following command:
 mvn test
+
+## 🔗 Swagger API Documentation
+
+[Swagger UI](http://localhost:8080/swagger-ui/index.html#)
 
 Contributing
 If you’d like to contribute to this project, please fork the repository and submit a pull request. We welcome improvements, bug fixes, and additional features.
