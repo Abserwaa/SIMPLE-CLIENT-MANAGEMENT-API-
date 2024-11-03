@@ -1,19 +1,23 @@
-**Simple Client Management API**
+## Simple Client Management API
 
 
-**DESCRIPTION**
+## Description
 
 The Client Management API provides a simple interface to create, retrieve, update, and delete client records. Each client includes details such as name, age, address, and any associated medical conditions. This API is ideal for applications needing a centralized way to handle client information.
 
 ## Table of Contents
 
+- [Simple Client Management API](#simple-client-management-api)
+- [Description](#description)
+- [Table of Contents](#table-of-contents)
 - [Features](#features)
 - [Technologies](#technologies)
 - [Setup](#setup)
+- [Database Setup](#database-setup)
+  - [Restoring the Database](#restoring-the-database)
+- [Entity Schema (Client)](#entity-schema-client)
 - [API Documentation](#api-documentation)
-- [Running the Application](#running-the-application)
-- [Contributing](#contributing)
-- [License](#license)
+- [Testing](#testing)
 
 ## Features
 
@@ -38,7 +42,7 @@ The Client Management API provides a simple interface to create, retrieve, updat
    git clone https://github.com/yourusername/simple-client-management.git
 
 
-   ## Database Setup
+## Database Setup
 
 To restore the database for this project, use the provided dump file located in the `database/` folder.
 
@@ -67,12 +71,13 @@ Replace `[username]` with your MySQL username.
 The application will start on http://localhost:8080
 
 
-**Entity Schema (Client)**
+## Entity Schema (Client)
+
 The Client entity represents the client table in the database.
 <img width="806" alt="Screenshot 2024-11-02 at 17 39 18" src="https://github.com/user-attachments/assets/922abe35-2f0f-4743-8042-4016739d8c04">
 
 
-**API Documentation**
+## API Documentation
 
 **API Endpoints**
 
@@ -113,7 +118,7 @@ Parameters:
 id: Client ID
 Response: Confirmation message upon successful deletion.
 
-**Testing**
+## Testing
 To run tests, use the following command:
 mvn test
 
