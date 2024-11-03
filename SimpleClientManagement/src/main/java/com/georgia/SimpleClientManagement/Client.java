@@ -10,8 +10,6 @@ import jakarta.persistence.Table;
 @Table(name = "client")
 public class Client {
 
-   
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
@@ -20,7 +18,7 @@ public class Client {
     private String name;
 
     private int age;
-    
+
     private String address;
 
     private String medicalCondition;
@@ -29,17 +27,14 @@ public class Client {
     public Client() {
     }
 
-    public Client(String name, int age,String address,String medicalCondition) {
+    public Client(String name, int age, String address, String medicalCondition) {
         this.name = name;
         this.age = age;
         this.address = address;
         this.medicalCondition = medicalCondition;
     }
 
-    
-    
-
-    //Getters and Setters
+    // Getters and Setters
     public Long getId() {
         return id;
     }
@@ -80,12 +75,3 @@ public class Client {
         this.medicalCondition = medicalCondition;
     }
 }
-
-
-
-
-
-    
-
-
-
