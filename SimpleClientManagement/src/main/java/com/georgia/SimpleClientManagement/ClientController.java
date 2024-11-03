@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
 @RestController
 @RequestMapping("/api/clients")
 public class ClientController {
@@ -28,25 +27,25 @@ public class ClientController {
      // Get a client by ID
      @GetMapping("/{id}")
      public Client getClient(@PathVariable Long id) {
-         return clientService.getClient(id);
-          
+          return clientService.getClient(id);
+
      }
 
-     //Create a new client profile
+     // Create a new client profile
      @PostMapping
      public String createClient(@RequestBody Client client) {
           clientService.createClient(client);
           return "Client profile created successfully";
-      }
-     
-      //Update a client's Profile
+     }
+
+     // Update a client's Profile
      @PutMapping("/{id}")
      public String updateClient(@PathVariable Long id, @RequestBody Client client) {
-          clientService.updateClient(id,client);
+          clientService.updateClient(id, client);
           return "Client profile updated successfully";
      }
-      
-     //Delete a client's Profile by ID
+
+     // Delete a client's Profile by ID
      @DeleteMapping("/{id}")
      public String deleteClient(@PathVariable Long id) {
           clientService.deleteClient(id);
