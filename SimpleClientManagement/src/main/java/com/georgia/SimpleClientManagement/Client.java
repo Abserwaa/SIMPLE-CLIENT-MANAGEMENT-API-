@@ -1,7 +1,5 @@
 package com.georgia.SimpleClientManagement;
 
-import java.util.UUID;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -12,14 +10,16 @@ import jakarta.persistence.Table;
 @Table(name = "client")
 public class Client {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
+   
 
-    private UUID id;// UUID primary key
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+    private Long id;
 
     private String name;
 
-    private String age;
+    private int age;
     
     private String address;
 
@@ -29,15 +29,18 @@ public class Client {
     public Client() {
     }
 
-    public Client(String name, String age,String address,String medicalCondition) {
+    public Client(String name, int age,String address,String medicalCondition) {
         this.name = name;
         this.age = age;
         this.address = address;
         this.medicalCondition = medicalCondition;
     }
 
+    
+    
+
     //Getters and Setters
-    public UUID getId() {
+    public Long getId() {
         return id;
     }
 
@@ -45,7 +48,7 @@ public class Client {
         return name;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
@@ -57,7 +60,7 @@ public class Client {
         return medicalCondition;
     }
 
-    public void setId(UUID id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -65,7 +68,7 @@ public class Client {
         this.name = name;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
