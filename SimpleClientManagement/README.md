@@ -1,7 +1,6 @@
- ## 📌 Project Name 
+# 📌 Project Name
 
- ## 🏷️Simple Client Management API
-
+## 🏷️Simple Client Management API
 
 ## 🔖Description
 
@@ -10,17 +9,19 @@ The Client Management API provides a simple interface to create, retrieve, updat
 ## 🔖Table of Contents
 
 - [📌 Project Name](#-project-name)
-- [🏷️Simple Client Management API](#️simple-client-management-api)
-- [🔖Description](#description)
-- [🔖Table of Contents](#table-of-contents)
-- [🔖Features](#features)
-- [🔖Technologies](#technologies)
-- [🔖Setup](#setup)
-- [🔖Database Setup](#database-setup)
-  - [Restoring the Database](#restoring-the-database)
-- [🔖Entity Schema (Client)](#entity-schema-client)
-- [🔖API Documentation](#api-documentation)
-- [Testing](#testing)
+  - [🏷️Simple Client Management API](#️simple-client-management-api)
+  - [🔖Description](#description)
+  - [🔖Table of Contents](#table-of-contents)
+  - [🔖Features](#features)
+  - [🔖Technologies](#technologies)
+  - [🔖Setup](#setup)
+  - [🔖Database Setup](#database-setup)
+    - [Restoring the Database](#restoring-the-database)
+    - [File Location](#file-location)
+  - [🔖Entity Schema (Client)](#entity-schema-client)
+  - [🔖API Documentation](#api-documentation)
+  - [API Endpoints](#api-endpoints)
+  - [Testing](#testing)
 
 ## 🔖Features
 
@@ -42,8 +43,7 @@ The Client Management API provides a simple interface to create, retrieve, updat
 
 1. **Clone the repository**:
 
-   git clone https://github.com/yourusername/simple-client-management.git
-
+   git clone <https://github.com/yourusername/simple-client-management.git>
 
 ## 🔖Database Setup
 
@@ -53,7 +53,9 @@ To restore the database for this project, use the provided dump file located in 
 
 1. Ensure MySQL is installed and running.
 2. Use the following command to restore the database from the dump file:
-    ### File Location
+
+   ### File Location
+
 - **Dump File**: `database/### File Location
 - **Dump File**: `My database/clientbackup.sql`
 
@@ -63,26 +65,23 @@ To restore the database for this project, use the provided dump file located in 
 
 Replace `[username]` with your MySQL username.
 
-3. **Build the project**;
+   **Build the project**;
      mvn clean install
 
-4. Run the application:
+1. Run the application:
    mvn spring-boot:run
 
-  
-
-The application will start on http://localhost:8080
-
+The application will start on <http://localhost:8080>
 
 ## 🔖Entity Schema (Client)
 
 The Client entity represents the client table in the database.
-<img width="806" alt="Screenshot 2024-11-02 at 17 39 18" src="https://github.com/user-attachments/assets/922abe35-2f0f-4743-8042-4016739d8c04">
 
+![Client Entity Schema](https://github.com/user-attachments/assets/922abe35-2f0f-4743-8042-4016739d8c04)
 
 ## 🔖API Documentation
 
-**API Endpoints**
+## API Endpoints
 
 1. **Get All Clients**
 URL: /api/clients
@@ -100,21 +99,21 @@ Response: Details of the specified client.
 URL: /api/clients
 Method: POST
 Request Body:
-<img width="704" alt="Screenshot 2024-11-02 at 15 19 59" src="https://github.com/user-attachments/assets/79a93acc-89e8-49ab-96bc-8bc271dcc9b6">
+![Create Client Request Body](https://github.com/user-attachments/assets/79a93acc-89e8-49ab-96bc-8bc271dcc9b6)
 
 Response: Confirmation message upon successful creation.
 
-4. **Update a Client**
+4 **Update a Client**
 URL: /api/clients/{id}
 Method: PUT
 Parameters:
 id: Client ID
 Request Body:
-<img width="516" alt="Screenshot 2024-11-02 at 17 05 12" src="https://github.com/user-attachments/assets/6d2143b9-0306-4296-b816-2b9f3c958741">
+![Update Client Request Body](https://github.com/user-attachments/assets/6d2143b9-0306-4296-b816-2b9f3c958741)
 
 Response: Confirmation message upon successful update.
 
-5. **Delete a Client**
+5 **Delete a Client**
 URL: /api/clients/{id}
 Method: DELETE
 Parameters:
@@ -122,11 +121,9 @@ id: Client ID
 Response: Confirmation message upon successful deletion.
 
 ## Testing
+
 To run tests, use the following command:
 mvn test
 
 Contributing
 If you’d like to contribute to this project, please fork the repository and submit a pull request. We welcome improvements, bug fixes, and additional features.
-
-
-
