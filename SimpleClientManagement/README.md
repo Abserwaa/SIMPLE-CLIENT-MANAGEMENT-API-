@@ -1,48 +1,51 @@
-## Simple Client Management API
+ ## 📌 Project Name 
+
+ ## 🏷️Simple Client Management API
 
 
-## Description
+## 🔖Description
 
 The Client Management API provides a simple interface to create, retrieve, update, and delete client records. Each client includes details such as name, age, address, and any associated medical conditions. This API is ideal for applications needing a centralized way to handle client information.
 
-## Table of Contents
+## 🔖Table of Contents
 
-- [Simple Client Management API](#simple-client-management-api)
-- [Description](#description)
-- [Table of Contents](#table-of-contents)
-- [Features](#features)
-- [Technologies](#technologies)
-- [Setup](#setup)
-- [Database Setup](#database-setup)
+- [📌 Project Name](#-project-name)
+- [🏷️Simple Client Management API](#️simple-client-management-api)
+- [🔖Description](#description)
+- [🔖Table of Contents](#table-of-contents)
+- [🔖Features](#features)
+- [🔖Technologies](#technologies)
+- [🔖Setup](#setup)
+- [🔖Database Setup](#database-setup)
   - [Restoring the Database](#restoring-the-database)
-- [Entity Schema (Client)](#entity-schema-client)
-- [API Documentation](#api-documentation)
+- [🔖Entity Schema (Client)](#entity-schema-client)
+- [🔖API Documentation](#api-documentation)
 - [Testing](#testing)
 
-## Features
+## 🔖Features
 
-- Create, read, update, and delete (CRUD) client profiles.
-- Handle client information such as name, age, address, and medical condition.
-- RESTful API with JSON support.
+- ✨Create, read, update, and delete (CRUD) client profiles.
+- ✨Handle client information such as name, age, address, and medical condition.
+- ✨RESTful API with JSON support.
 
-## Technologies
+## 🔖Technologies
 
-- Java
-- Spring Boot
-- Spring MVC
-- JUnit & Mockito (for testing)
-- H2 Database (in-memory)
-- Maven
-- MYSQL
+- ✨Java
+- ✨Spring Boot
+- ✨Spring MVC
+- ✨JUnit & Mockito (for testing)
+- ✨H2 Database (in-memory)
+- ✨Maven
+- ✨MYSQL
 
-## Setup
+## 🔖Setup
 
 1. **Clone the repository**:
 
    git clone https://github.com/yourusername/simple-client-management.git
 
 
-## Database Setup
+## 🔖Database Setup
 
 To restore the database for this project, use the provided dump file located in the `database/` folder.
 
@@ -71,13 +74,13 @@ Replace `[username]` with your MySQL username.
 The application will start on http://localhost:8080
 
 
-## Entity Schema (Client)
+## 🔖Entity Schema (Client)
 
 The Client entity represents the client table in the database.
 <img width="806" alt="Screenshot 2024-11-02 at 17 39 18" src="https://github.com/user-attachments/assets/922abe35-2f0f-4743-8042-4016739d8c04">
 
 
-## API Documentation
+## 🔖API Documentation
 
 **API Endpoints**
 
